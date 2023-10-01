@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0>
+    <title>Library</title>
+
+    <link rel=" icon" href="icons/5269077_book_education_library_notebook_paper_icon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Electrolize&family=Roboto:wght@400;700&family=Martian+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <h1>My Library</h1>
+        </header>
+
+        <section id="content">
+
+            <button class="add_button">+ Add book</button>
+
+            <dialog class="dialog" id="dialog">
+                <h3>Add Book</h3>
+                <form id="form" method="dialog" action="#">
+                    <input type="text" id="title" name="title" class="title" maxlength="35" placeholder="Title" required>
+                    <input type="text" id="author" name="author" class="author" maxlength="35" placeholder="Author"
+                        required>
+                    <input type="text" pattern="\d*" id="pages" name="pages" class="pages" maxlength="8" placeholder="Pages"
+                        required>
+                    <div class="checkbox_container">
+                        <label for="read">Have you read it?</label>
+                        <input type="checkbox" id="read" name="read">
+                    </div>
+                    <button type="submit" class="submit_btn">SUBMIT</button>
+                    <button type="button" class="close_btn">CLOSE</button>
+                </form>
+            </dialog>
+
+            <div class="grid">
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
